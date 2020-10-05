@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         UploadTask obj=new UploadTask();
         obj.execute();
-        /*AmazonS3 s3Client = new AmazonS3Client(new BasicSessionCredentials("AKIAYHKVHTY54LUDTGXT", "xvIDMvCylPCx27cHzjEE4/MjsCssDPTobG4PC/jg"," "));
+        /*AmazonS3 s3Client = new AmazonS3Client(new BasicSessionCredentials(" ", " "," "));
         s3Client.setRegion(Region.getRegion(Regions.AP_SOUTH_1));
         TransferUtility transferUtility = new TransferUtility(s3Client, getApplicationContext());
         TransferObserver transferObserver = transferUtility.upload("snaptoktempuploads",
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
             try {
                 CognitoCachingCredentialsProvider credentialsProvider = new CognitoCachingCredentialsProvider(
                         getApplicationContext(),
-                        "ap-south-1:71fba7a5-01b1-402a-9c3e-3280f6d916d1", // Identity pool ID
+                        " ", // Identity pool ID
                         Regions.AP_SOUTH_1 // Region
                 );
 
@@ -88,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
                 s3.setBucketAccelerateConfiguration("snaptoktempuploads", new BucketAccelerateConfiguration(BucketAccelerateStatus.Enabled));
                 TransferUtility transferUtility = new TransferUtility(s3, getApplicationContext());
                 final TransferObserver observer = transferUtility.upload(
-                        "snaptoktempuploads",  //this is the bucket name on S3
-                        "SnapTok By Vedant with accelerated configuration", //this is the path and name
+                        "",  //this is the bucket name on S3
+                        "", //this is the path and name
                         new File(Environment.getExternalStorageDirectory().toString() + "/what/hi.mp4"), //path to the file locally
                         CannedAccessControlList.PublicRead //to make the file public
                 );
