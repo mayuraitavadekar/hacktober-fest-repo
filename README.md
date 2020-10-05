@@ -1,4 +1,3 @@
-# Sample-Project-Snaptok
 
 ## Description
 
