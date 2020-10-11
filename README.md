@@ -12,3 +12,6 @@ This is a video player app which receives data from a restAPI and plays videos.
 
 * com.google.android.exoplayer:exoplayer:2.12.0
 * com.android.volley:volley:1.1.1
+
+##FEEDBACKS
+GREAT WORK..KEEP IT UP(AADHYAAN)
